@@ -1,0 +1,20 @@
+/* Customize the toast container width on smaller screens */
+@media (max-width: 480px) {
+    .Toastify__toast-container {
+        width: 80% !important;
+        /* Change this to your desired width */
+        /* left: 50%;
+        transform: translateX(-50%); */
+      
+        position: fixed;
+        left: 15%;
+        bottom: 10px;
+    }
+}
+
+/* Example of further customization */
+ .Toastify__toast {
+    border-radius: 8px !important;
+    padding: 16px !important;
+    margin-bottom: 10px;
+}
