@@ -24,12 +24,6 @@
 
 /* For tablets and small screens */
 @media (max-width: 768px) {
-  .slide {
-    height: 60vh;
-    background-size: cover;
-    /* Adjust background image to contain on smaller screens */
-  }
-
   .slide h1 {
     font-size: 1.5rem;
     padding: 30px 15px;
@@ -39,12 +33,6 @@
 
 /* For mobile phones */
 @media (max-width: 480px) {
-  .slide {
-    height: 50vh;
-    background-size: contain;
-    /* Adjust background image to contain on smaller screens */
-  }
-
   .slide h1 {
     font-size: 1.2rem;
     padding: 20px 10px;
