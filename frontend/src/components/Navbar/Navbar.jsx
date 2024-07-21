@@ -71,7 +71,7 @@ const Navbar = () => {
           ) : (
             user.profileImagePath ? (
               <img
-                src={`${import.meta.env.VITE_APP_API_URL}/${user.profileImagePath.replace(
+                src={`${user.profileImagePath.replace(
                   "public",
                   ""
                 )}`}

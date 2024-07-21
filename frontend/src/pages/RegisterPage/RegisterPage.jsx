@@ -54,7 +54,7 @@ const RegisterPage = () => {
         toast.success("Account created successfully, you can login now.");
         navigate("/login");
       } else {
-        toast.error("Registration failed. Please try again.");
+        toast.error("Registration failed. Please try again.", response.json());
       }
     } catch (err) {
       toast.error(`Registration failed: ${err.message}`);

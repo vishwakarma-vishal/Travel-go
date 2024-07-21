@@ -95,7 +95,7 @@ const ListingCard = ({
           {listingPhotoPaths?.map((photo, index) => (
             <div key={index} className="slide">
               <img
-                src={`${import.meta.env.VITE_APP_API_URL}/${photo?.replace("public", "")}`}
+                src={`${photo?.replace("public", "")}`}
                 alt={`img ${index + 1}`}
               />
               <div

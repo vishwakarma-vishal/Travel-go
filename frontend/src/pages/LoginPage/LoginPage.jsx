@@ -44,9 +44,10 @@ const LoginPage = () => {
         })
       );
 
+      console.log(loggedIn);
       toast.success("Login successful!");
       navigate("/");
-      console.error("Login sucessfull");
+      console.log("Login sucessful");
     } catch (err) {
       toast.error(`Login failed: ${err.message}`);
     }

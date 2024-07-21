@@ -396,6 +396,7 @@ const CreateListing = () => {
               <input
                 type="file"
                 multiple
+                name = "listingPhotos"
                 accept="image/*"
                 onChange={handleUploadPhotos}
                 id="upload-photos"

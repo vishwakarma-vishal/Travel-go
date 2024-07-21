@@ -74,7 +74,6 @@ const ListingDetails = () => {
                 totalPrice: listing.price * dayCount,
             }
 
-            console.log(bookingForm);
 
             const response = await fetch(
                 `${import.meta.env.VITE_APP_API_URL}/bookings/create`,
@@ -111,7 +110,7 @@ const ListingDetails = () => {
                     {listing.listingPhotoPaths?.map((item, index) => (
                         <img
                             key={index}
-                            src={`${import.meta.env.VITE_APP_API_URL}/${item.replace("public", "")}`}
+                            src={`${item.replace("public", "")}`}
                             alt="main"
                         />
                     ))}
@@ -129,7 +128,7 @@ const ListingDetails = () => {
 
                 <div className="profile">
                     <img
-                        src={`${import.meta.env.VITE_APP_API_URL}/${listing.creator.profileImagePath.replace(
+                        src={`${listing.creator.profileImagePath.replace(
                             "public",
                             ""
                         )}`}
