@@ -85,9 +85,92 @@
     color: var(--pinkred);
 }
 
+/* RESPONSIVENESS */
 
+/* For tablets and small screens */
+@media (max-width: 768px) {
+    .categories {
+        padding: 40px 30px;
+    }
+
+    .categories h1 {
+        font-size: 35px;
+    }
+
+    .categories p {
+        font-size: 18px;
+    }
+
+    .categories_list .category {
+        width: 200px;
+        height: 160px;
+    }
+
+    .categories_list .category .category_text .category_text_icon {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 500px) {
+    .categories_list .category {
+        width: 170px;
+        height: 130px;
+    }
+}
+
+/* For mobile phones */
 @media (max-width: 480px) {
     .categories {
-        padding: 50px 20px;
+        padding: 30px 15px;
+    }
+
+    .categories h1 {
+        font-size: 30px;
+    }
+
+    .categories p {
+        font-size: 16px;
+    }
+
+    .categories_list {
+        padding: 30px 0;
+        gap: 10px;
+    }
+
+    .categories_list .category {
+        width: 150px;
+        height: 120px;
+    }
+
+    .categories_list .category .category_text .category_text_icon {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 370px) {
+    .categories {
+        padding: 30px 15px;
+    }
+
+    .categories h1 {
+        font-size: 30px;
+    }
+
+    .categories p {
+        font-size: 16px;
+    }
+
+    .categories_list {
+        padding: 30px 0;
+        gap: 10px;
+    }
+
+    .categories_list .category {
+        width: 130px;
+        height: 100px;
+    }
+
+    .categories_list .category .category_text .category_text_icon {
+        font-size: 25px;
     }
 }

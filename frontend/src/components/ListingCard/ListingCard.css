@@ -1,4 +1,4 @@
-/* Assuming the variables and mixins are defined in the imported SCSS file */
+/* Assuming the variables and mixins are defined in the imported CSS file */
 @import "../../style/variables.css";
 
 .listing-card {
@@ -10,7 +10,8 @@
 }
 
 .listing-card:hover {
-  box-shadow: var(--shadow); /* Use the shadow value from the variables file */
+  box-shadow: var(--shadow);
+  /* Use the shadow value from the variables file */
 }
 
 .listing-card .slider-container {
@@ -91,4 +92,35 @@
   cursor: pointer;
   z-index: 999;
   background: none;
+}
+
+/* Media Queries */
+
+/* For tablets and small screens */
+@media (max-width: 768px) {
+  .listing-card .slider-container {
+    width: 240px;
+  }
+
+  .listing-card .slider-container .slider .slide {
+    height: 220px;
+  }
+
+  .listing-card h3 {
+    font-size: 16px;
+  }
+
+  .listing-card p {
+    font-size: 14px;
+  }
+
+  .listing-card span {
+    font-size: 16px;
+  }
+
+  .listing-card .favorite {
+    right: 15px;
+    top: 15px;
+    font-size: 18px;
+  }
 }

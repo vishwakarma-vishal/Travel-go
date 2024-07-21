@@ -93,7 +93,6 @@ const ListingDetails = () => {
         }
     }
 
-
     return loading ? (
         <Loader />
     ) : (
@@ -182,11 +181,11 @@ const ListingDetails = () => {
                             )}
 
                             <h2>Total price: ${listing.price * dayCount}</h2>
-                            <p>Start Date: {dateRange[0].startDate.toDateString()}</p>
-                            <p>End Date: {dateRange[0].endDate.toDateString()}</p>
+                            <p><b>Start Date:</b> {dateRange[0].startDate.toDateString()}</p>
+                            <p><b>End Date:</b> {dateRange[0].endDate.toDateString()}</p>
 
                             <button className="button" type="submit" onClick={handleSubmit}>
-                                BOOKING
+                                Book Now
                             </button>
                         </div>
                     </div>

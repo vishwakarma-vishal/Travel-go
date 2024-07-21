@@ -2,11 +2,16 @@
 
 
 /* General Styles */
+.login-page {
+    height: 100vh;
+}
+
 .login {
     width: 100%;
+    height: 75%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: space-between;
     flex-direction: column;
     background-color: #fff;
     background-size: cover;
@@ -122,12 +127,14 @@
 @media screen and (max-width: 580px) {
     .login_content {
         width: 70%;
+        padding: 10px;
     }
 }
 
 @media screen and (max-width: 475px) {
     .login_content {
         width: 85%;
+        padding: 10px;
     }
 }
 
@@ -135,6 +142,7 @@
     .login_content {
         width: 100%;
         height: 100%;
+        padding: 10px 15px;
         justify-content: center;
         border-radius: 0;
     }

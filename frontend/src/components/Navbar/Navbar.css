@@ -1,11 +1,5 @@
 /* variables.css */
-:root {
-    --pinkred: #F8395A;
-    --blue: #24355A;
-    --lightgrey: #F7F8F8;
-    --grey: #bdb9b9;
-    --darkgrey: #969393;
-}
+@import "../../style/variables.css";
 
 .shadow {
     box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
@@ -41,11 +35,13 @@
 .navbar_search {
     border: 1px solid var(--grey);
     border-radius: 30px;
+    width: 250px;
     height: 50px;
     padding: 0 20px;
     display: flex;
     gap: 40px;
     align-items: center;
+    position: relative;
 }
 
 .navbar_search input {
@@ -58,6 +54,8 @@
 }
 
 .search_button {
+    position: absolute;
+    right: 20px;
     background: none;
     border: none;
     cursor: pointer;
@@ -82,13 +80,13 @@
 }
 
 .navbar_right_account {
-    height: 50px;
+    height: 45px;
     display: flex;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 20px;
     border: 1px solid var(--grey);
     border-radius: 30px;
-    gap: 10px;
+    gap: 15px;
     background-color: white;
     cursor: pointer;
 }
@@ -102,13 +100,13 @@
     color: var(--darkgrey);
 }
 
-.navbar_right_account .icon_menu img{
+.navbar_right_account .icon_menu img {
     width: 20px;
 }
 
 .profile_image {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -132,7 +130,7 @@
     width: 100%;
     padding: 8px 15px;
     text-decoration: none;
-    color: var(--blue);
+    color: var(--pink);
     font-weight: 700;
 }
 
@@ -142,12 +140,8 @@
 }
 
 /* Media Queries */
-@media (max-width: 480px) {
-    .navbar_right .host {
-        display: none;
-    }
-}
 
+/* For tablets and small screens */
 @media (max-width: 900px) {
     .navbar {
         padding: 10px 20px;
@@ -159,5 +153,44 @@
 
     .navbar_search {
         display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar_right .host {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar .logo {
+        width: 60px;
+    }
+
+    .navbar_right_account {
+        padding: 0 15px;
+        height: 40px;
+    }
+
+    .profile_image {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar .logo {
+        width: 50px;
+    }
+
+    .navbar_right {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 10px;
     }
 }

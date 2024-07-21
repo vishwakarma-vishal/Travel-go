@@ -53,7 +53,7 @@ const TripList = () => {
     return loading ? (
         <Loader />
     ) : (
-        <>
+        <div className="trip-list">
             <Navbar />
 
             <h1 className="title-list">Your Trip List</h1>
@@ -81,7 +81,7 @@ const TripList = () => {
             </div>
 
             <Footer />
-        </>
+        </div>
     );
 };
 

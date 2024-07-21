@@ -53,7 +53,7 @@ const LoginPage = () => {
     }
   };
 
-  return (<>
+  return (<div className="login-page">
     <Navbar />
     <div className="login">
       <div className="login_content">
@@ -93,8 +93,8 @@ const LoginPage = () => {
         </span>
       </div>
     </div>
-    <Footer/>
-  </>
+    <Footer />
+  </div>
   );
 };
 
