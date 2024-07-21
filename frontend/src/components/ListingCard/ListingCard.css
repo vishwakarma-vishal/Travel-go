@@ -2,26 +2,21 @@
 @import "../../style/variables.css";
 
 .listing-card {
+  width: 320px;
   position: relative;
   cursor: pointer;
-  padding: 10px;
   border-radius: 10px;
-  background-color: #e0e0e057;
-}
-
-.listing-card:hover {
-  box-shadow: var(--shadow);
-  /* Use the shadow value from the variables file */
+  background-color: #fff;
 }
 
 .listing-card .slider-container {
-  width: 300px;
+  width: 320px;
   overflow: hidden;
   border-radius: 10px;
-  margin-bottom: 10px;
 }
 
 .listing-card .slider-container .slider {
+  height: 200px;
   display: flex;
   transition: transform 0.5s ease;
 }
@@ -44,7 +39,7 @@
 .listing-card .slider-container .slider .slide .prev-button,
 .listing-card .slider-container .slider .slide .next-button {
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   padding: 6px;
   border-radius: 50%;
@@ -55,6 +50,8 @@
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.7);
   z-index: 9999;
+  width: 25px;
+  height: 25px;
 }
 
 .listing-card .slider-container .slider .slide .prev-button:hover,
@@ -68,6 +65,10 @@
 
 .listing-card .slider-container .slider .slide .next-button {
   right: 10px;
+}
+
+.listing-card .content {
+  padding: 5px 15px 5px 0px;
 }
 
 .listing-card h3 {
@@ -92,35 +93,4 @@
   cursor: pointer;
   z-index: 999;
   background: none;
-}
-
-/* Media Queries */
-
-/* For tablets and small screens */
-@media (max-width: 768px) {
-  .listing-card .slider-container {
-    width: 240px;
-  }
-
-  .listing-card .slider-container .slider .slide {
-    height: 220px;
-  }
-
-  .listing-card h3 {
-    font-size: 16px;
-  }
-
-  .listing-card p {
-    font-size: 14px;
-  }
-
-  .listing-card span {
-    font-size: 16px;
-  }
-
-  .listing-card .favorite {
-    right: 15px;
-    top: 15px;
-    font-size: 18px;
-  }
 }

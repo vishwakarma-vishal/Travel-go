@@ -121,40 +121,43 @@ const ListingCard = ({
         </div>
       </div>
 
-      <h3>
-        {city}, {province}, {country}
-      </h3>
-      <p>{category}</p>
+      <div className="content">
+        <h3>
+          {city}, {province}, {country}
+        </h3>
+        {/* <p>{category}</p> */}
 
-      {!booking ? (
-        <>
-          <p>{type}</p>
-          <p>
-            <span>${price}</span> per night
-          </p>
-        </>
-      ) : (
-        <>
-          <p>
-            {startDate} - {endDate}
-          </p>
-          <p>
-            <span>${totalPrice}</span> total
-          </p>
-        </>
-      )}
+        {!booking ? (
+          <>
+            <p>{type}</p>
+            <p>
+              <span>${price}</span> per night
+            </p>
+          </>
+        ) : (
+          <>
+            <p>
+              {startDate} - {endDate}
+            </p>
+            <p>
+              <span>${totalPrice}</span> total
+            </p>
+          </>
+        )}
 
-      <button
-        className="favorite"
-        onClick={(e) => {
-          e.stopPropagation();
-          patchWishList();
-        }}
-        disabled={!user}
-      >
-        <FaHeart color={isLiked ? "red" : "white"} />
-      </button>
+        <button
+          className="favorite"
+          onClick={(e) => {
+            e.stopPropagation();
+            patchWishList();
+          }}
+          disabled={!user}
+        >
+          <FaHeart color={isLiked ? "red" : "white"} />
+        </button>
+      </div>
     </div>
+
   );
 };
 
