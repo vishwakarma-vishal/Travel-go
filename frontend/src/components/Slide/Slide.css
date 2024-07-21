@@ -33,6 +33,9 @@
 
 /* For mobile phones */
 @media (max-width: 480px) {
+  .slide{
+    height: 40vh;
+  }
   .slide h1 {
     font-size: 1.2rem;
     padding: 20px 10px;
