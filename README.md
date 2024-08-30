@@ -2,6 +2,9 @@
 
 TravelGo is a web application designed to help users find and book properties for travel. It is built using the MERN stack (MongoDB, Express.js, React.js, Node.js) and offers features similar to those found on Airbnb, including the ability to search for properties, book stays, and add properties for rent.
 
+![image](https://github.com/user-attachments/assets/574800fe-53b8-4fa4-8be0-ec3296ef355e)
+
+
 ## Table of Contents
 
 - [Features](#features)
@@ -107,3 +110,12 @@ travel-go/
 │   └── server.js        # Main server file
 ├── .gitignore
 └── README.md
+```
+## Acknowledgements
+- [MongoDB](https://www.mongodb.com/)
+- [Express.js](https://expressjs.com/)
+- [React.js](https://reactjs.org/)
+- [Node.js](https://nodejs.org/)
+- [Redux](https://redux.js.org/)
+- [Cloudinary](https://cloudinary.com/)
+- [JWT](https://jwt.io/)
