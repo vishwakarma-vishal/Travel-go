@@ -1,0 +1,149 @@
+@import "../../style/variables.css";
+
+
+/* General Styles */
+.login-page {
+    height: 100vh;
+}
+
+.login {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-direction: column;
+    background-color: #fff;
+    background-size: cover;
+}
+
+.login_content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+    padding: 30px 40px;
+    color: black;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.login_content .logo {
+    width: 80px;
+    margin: 0 auto;
+}
+
+.login_content h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.login_content span {
+    color: grey;
+}
+
+.login_content_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login_content_form input {
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 5px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    font-size: 16px;
+}
+
+.login_content_form input:not(:placeholder-shown):focus {
+    background: transparent;
+}
+
+.login_content_form input::placeholder {
+    color: var(--grey);
+}
+
+.login_content_form button {
+    margin-top: 15px;
+    width: 100%;
+    background: var(--pinkred);
+    /* Example style, replace with your actual button style */
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.signup-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 16px;
+    text-align: center;
+}
+
+.signup-text a {
+    text-decoration: none;
+    color: red;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+.login_content p {
+    color: white;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* * Media queries */
+@media screen and (max-width: 1000px) {
+    .login_content {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .login_content {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .login_content {
+        width: 70%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .login_content {
+        width: 85%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .login_content {
+        width: 100%;
+        height: 100%;
+        padding: 10px 15px;
+        justify-content: center;
+        border-radius: 0;
+    }
+}

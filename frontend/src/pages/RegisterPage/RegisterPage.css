@@ -1,0 +1,126 @@
+/* General Page Styles */
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #fff;
+}
+
+.register_content {
+    background-color: #fff;
+    padding: 1rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.register_content h1{
+    color: var(--pinkred);
+    text-align: center;
+}
+.register_content p{
+    text-align: center;
+    color: grey;
+}
+
+/* Form Styles */
+.register_content_form {
+    margin-top: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.form_grid{
+    display: flex;
+    gap: 10px;
+}
+
+.register_content_form label {
+    display: inline-block;
+    margin-bottom: 0.25rem;
+}
+
+.register_content_form input {
+    padding: 10px 15px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    outline: none;
+}
+
+.register_content_form input::placeholder {
+    color: grey;
+}
+
+.register_content_form button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--pinkred);
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.profile_image_upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 3px dotted grey;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.profile_image_upload .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+    color: grey;
+}
+
+.profile_image_upload .upload-text {
+    font-size: 0.875rem;
+    color: grey;
+    margin: 0;
+}
+
+.register_content .login-text {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 0.875rem;
+    color: grey;
+    text-decoration: none;
+}
+
+.register_content .login-link{
+    margin-left:5px;
+    color: var(--pinkred);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register_content .login-link:hover {
+    text-decoration: underline;
+}
+
+/* Error Message */
+.register_content_form p {
+    color: red;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+
+/* * Media queries */
+@media screen and (max-width: 475px) {
+    .register_content {
+        padding: 1rem;
+    }
+}

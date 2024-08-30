@@ -1,0 +1,93 @@
+/* Define media queries based on breakpoints */
+.category-list {
+    padding: 50px 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.category-list .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #969393;
+    /* Dark Grey */
+    cursor: pointer;
+}
+
+.category-list .category .category_icon {
+    font-size: 30px;
+}
+
+.category-list .category p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.category-list .category:hover {
+    color: #f8395a;
+    /* Pink Red */
+}
+
+.category-list .selected {
+    color: #f8395a;
+    /* Pink Red */
+}
+
+.listings {
+    padding: 20px 120px 50px 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+/* Add padding adjustments for larger screens */
+@media (max-width: 1000px) {
+    .listings {
+        padding: 0 20px 50px 20px;
+    }
+}
+
+/* For tablets and small screens */
+@media (max-width: 768px) {
+    .category-list {
+        padding: 40px 30px;
+        gap: 40px;
+    }
+
+    .category-list .category .category_icon {
+        font-size: 25px;
+    }
+
+    .category-list .category p {
+        font-size: 16px;
+    }
+
+    .listings {
+        padding: 10px 30px 40px 30px;
+        gap: 0.8rem;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .category-list {
+        padding: 30px 15px;
+        gap: 20px;
+    }
+
+    .category-list .category .category_icon {
+        font-size: 20px;
+    }
+
+    .category-list .category p {
+        font-size: 14px;
+    }
+
+    .listings {
+        padding: 10px 15px 30px 15px;
+        gap: 0.5rem;
+    }
+}
