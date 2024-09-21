@@ -18,7 +18,7 @@ RUN cd frontend && npm install && npm run build
 COPY . .
 
 # Expose the backend port
-EXPOSE 5000  # Change this to your backend port if different
+EXPOSE 5000
 
 # Start the backend server
 CMD ["npm", "start", "--prefix", "backend"]
