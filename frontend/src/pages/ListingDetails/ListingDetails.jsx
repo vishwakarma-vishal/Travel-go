@@ -144,7 +144,7 @@ const ListingDetails = () => {
                 <hr />
 
                 <h3>{listing.highlight}</h3>
-                <p>{listing.highlightDesc}</p>
+                <p><pre>{listing.highlightDesc}</pre></p>
                 <hr />
 
                 <div className="booking">

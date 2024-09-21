@@ -22,6 +22,7 @@
     flex-direction: column;
     gap: 10px;
     width: 40%;
+    margin: auto;
     padding: 30px 40px;
     color: black;
     border-radius: 20px;

@@ -69,6 +69,11 @@
     margin-top: 20px;
 }
 
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
 .listing-details .booking {
     display: flex;
     justify-content: space-between;
@@ -99,13 +104,13 @@
     margin: 10px 0;
 }
 
-.listing-details .booking .date-range-calendar h2{
-   font-size: 20px;
- }
+.listing-details .booking .date-range-calendar h2 {
+    font-size: 20px;
+}
 
-.listing-details .booking .date-range-calendar p{
-   margin: 5px auto;
-   color: rgba(0, 0, 0, 0.8);
+.listing-details .booking .date-range-calendar p {
+    margin: 5px auto;
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .listing-details .booking .date-range-calendar .button {
@@ -153,4 +158,4 @@
     .listing-details .date-range-calendar .button {
         max-width: 300px;
     }
-} 
+}
