@@ -1,3 +1,16 @@
 [build]
-frontend = "frontend"
-backend = "backend"
+  # Specify the frontend and backend directories
+  frontend = "frontend"
+  backend = "backend"
+
+[settings]
+  # Specify the Node.js version
+  node_version = "20.x"
+
+[build.command]
+  # Build commands for frontend and backend
+  command = "cd backend && npm install && cd ../frontend && npm install && npm run build"
+
+[start]
+  # Start command for the backend
+  command = "cd backend && npm start"
