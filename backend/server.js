@@ -7,7 +7,11 @@ const authRoutes = require("./routes/authRoute.js");
 const listingRoutes = require("./routes/listingRoute.js");
 const bookingRoutes = require("./routes/bookingRoute.js");
 const userRoutes = require("./routes/userRoute.js");
-const path = require("path"); // Import path module
+const path = require("path"); 
+const job = require('./cron.js'); 
+
+//start the cron job
+job.start();
 
 // MIDDLEWARE
 app.use(cors());
@@ -22,14 +26,6 @@ app.use("/auth", authRoutes);
 app.use("/properties", listingRoutes);
 app.use("/bookings", bookingRoutes);
 app.use("/users", userRoutes);
-
-// Serve static files from the React frontend app
-app.use(express.static(path.join(__dirname, '../frontend/build'))); // Adjust path to your frontend build
-
-// Catch-all handler to serve the React app
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
-});
 
 // Database connection 
 const dbConnect = require("./config/database.js");

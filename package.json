@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "cron": "^3.1.7",
+    "docker": "^1.0.0"
+  }
+}
